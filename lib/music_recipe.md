@@ -75,15 +75,14 @@ result = MusicTracker()
 result.add_track("Drop it like it's hot", "Snoop Dogg") # => "Track has been added."
 result.display_tracks() # => ["Drop it like it's hot by Snoop Dogg"]
 
-
 """
 User added multiple new Tracks to the list
 #Displays the Tracks in the list
 """
 result = MusicTracker()
 result.add_track("Drop it like it's hot", "Snoop Dogg") # => "Track has been added."
-result.display_tracks() # => ["Drop it like it's hot by Snoop Dogg"]
-
+result.add_track("Walk the dog", "Snoop Dogg")
+result.display_tracks() # => ["Drop it like it's hot by Snoop Dogg", "Walk the dog by Snoop Dogg"]
 
 """
 Given an empty string to add into list
@@ -91,6 +90,14 @@ Given an empty string to add into list
 """
 result = MusicTracker()
 result.add_track("", "") # raises an error with the message "Please enter a track along with artist name."
+
+"""
+After music tracker is init
+#display returns an empty playlist
+"""
+result = MusicTracker()
+result.display_tracks() # []
+
 
 """
 Given an integer to add into list
