@@ -1,0 +1,2 @@
+class MusicTracker():
+    pass
